@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>🧉</title>
+		<title>Dejanos tu mensaje</title>
 	</head>
 	<header>
 		<h1 align="center">¿Salen unos <b>matthew mcconaughey?</b></h1>
@@ -18,7 +18,18 @@
 		</nav>
 	</header>
 	<main>
-		<a href="mailto:jfmisuraca@hotmail.com">mail de contacto</a>
+		<section>
+			<!--- TODO implementar formulario con method POST para darle más privacidad al mail de los usuarios respecto del ISP? --->
+			<form method="GET" action="">
+				Nombre<br><input type="text" name="nombre" autofocus size="40" required><br>
+				Mail de contacto<br><input type="text" name="mail_usuario" size="40" placeholder="para responder a sus consultas, opcional"><br>
+				Comentarios<br><textarea cols="80" rows="5" required></textarea><br>
+				<input type="submit" value="Enviar"> <input type="reset" value="Restablecer">
+			</form>
+		</section>
+		<section>
+			También puede comunicarse directamente <a href="mailto:jfmisuraca@hotmail.com">enviando un mail</a>.
+		</section>
 	</main>
 	
 	
