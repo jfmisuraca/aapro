@@ -1,41 +1,40 @@
 // ejercicio 1 - heladeria
 
-let topping = ["Oreo", "KitKat", "Kinder"];
-let precio = 0;
+let topping = prompt ('¿Querés topping de Oreo, KitKat o Kinder?');
+let precio;
 let helado = 30;
-let precioFinal = 0;
+let precioFinal;
 
-if(topping[0]) {
-  precio = 10;
-} else if(topping[1]) {
-  precio = 15;
-} else if(topping[2]) { 
-  precio = 25;
-} else {
-  precio = "No tenemos ese topping"
-}
-
-if precio != "No tenemos ese topping") {
+if ( topping == "Oreo" || topping == "oreo" ) {
+  precio = 10 ;
   precioFinal = helado + precio;
-  console.log("El helado cuesta $" + precioFinal);
+  console.log( "El helado cuesta $" + precioFinal ) ;
+} else if ( topping == "KitKat" || topping == "kitkat" || topping == "Kitkat" || topping == "kitKat" )  {
+  precio = 15 ;
+  precioFinal = helado + precio ;
+  console.log( "El helado cuesta $" + precioFinal ) ;
+} else if ( topping == "Kinder" || topping == "kinder" ) {
+  precio = 25 ;
+  precioFinal = helado + precio;
+  console.log( "El helado cuesta $" + precioFinal ) ;
 } else {
-  console.log("precio")
+  precio = "No tenemos ese topping";
 }
 
 // ejercicio 2 - pedido
 
-let pedido = "";
+let pedido = prompt('¿Qué le gustaría cenar?');
 
 switch (pedido) {
-  case carne:
+  case 'carne':
     console.log("Le recomendamos acompañar su plato con vino tinto")
     break;
-  case pescado:
+  case 'pescado':
     console.log("Le recomendamos acompañar su plato con vino blanco")
-  break;
-  case verdura:
+    break;
+  case 'verdura':
     console.log("Le recomendamos acompañar su plato con agua")
-  break;
+    break;
   default:
     console.log("Le solicitamos elija entre carne, pescado o verdura")
     break;
@@ -51,9 +50,9 @@ for (let index = 0; index < variableConArray.length; index++) {
 
 // ejercicio 4 - WHILE
 
-let n = 0
+let numero = 0;
 
-while (n < 11) {
-  let n = n++
-  console.log(n " es más chico que 11");
+while (numero < 11) {
+  console.log(numero + ' es mas chico que 11');
+  numero = numero + 1 ;
 }
